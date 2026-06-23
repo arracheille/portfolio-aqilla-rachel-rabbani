@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
   --latte: #fffcf4;
   --yellow: #fffa64;
+  --butter: #fff89a;
   --brown: #421e18;
-  --dark-pink: #934662;
-  --pink: #ffa0c2;
-  
+  --dark-pink: #8e5474;
+  --pink: #ff97d0;
+
   --bricollage: system-ui, "Bricolage Grotesque", sans-serif;
   --inter: system-ui, "Inter", sans-serif;
 
-  font: 1.1rem/145% var(--inter);
+  font-family: var(--inter);
   color: var(--brown);
   background: var(--latte);
   font-synthesis: none;
@@ -23,13 +24,15 @@
   }
 }
 
-body, * {
+body,
+* {
   margin: 0;
   padding: 0;
 }
 
 * {
   box-sizing: border-box;
+  color: var(--brown);
 }
 
 h1,
@@ -57,4 +60,70 @@ h2 {
   @media (max-width: 1024px) {
     font-size: 20px;
   }
+}
+
+a,
+spam {
+  text-decoration: none;
+}
+
+.f-1 {
+  font-size: 2.1rem;
+}
+
+.f-2 {
+  font-size: 1.5rem;
+}
+
+.f-3 {
+  font-size: 1.2rem;
+}
+
+.f-4 {
+  font-size: 1rem;
+}
+
+.f-bricollage {
+  font-family: var(--bricollage);
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.f-inter {
+  font-family: var(--inter);
+}
+
+.f-700 {
+  font-weight: 700;
+}
+
+nav {
+  padding: 1rem 4rem 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--butter);
+  border-bottom: solid 2px var(--brown);
+  position: fixed;
+  width: 100%;
+}
+
+nav ul,
+nav li {
+  list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav li a {
+  color: var(--dark-pink);
+}
+
+section {
+  padding: 3rem 4rem 1rem 4rem;
+  min-height: 100vh;
 }
